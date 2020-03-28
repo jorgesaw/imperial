@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DlgAddProveedor</class>
+ <widget class="QDialog" name="DlgAddProveedor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>445</width>
+    <height>346</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Agregar proveedor</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="7" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLineEdit" name="celularLineEdit">
+         <property name="maxLength">
+          <number>18</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="9" column="0">
+      <widget class="QPushButton" name="vendedorPushButton">
+       <property name="text">
+        <string>&amp;Vendedor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="nombreLabel">
+       <property name="text">
+        <string>&amp;Empresa:</string>
+       </property>
+       <property name="buddy">
+        <cstring>nombreLineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="barrioLineEdit">
+       <property name="maxLength">
+        <number>30</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="barrioLabel">
+       <property name="text">
+        <string>&amp;Barrio:</string>
+       </property>
+       <property name="buddy">
+        <cstring>barrioLineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLineEdit" name="telefonoLineEdit">
+         <property name="maxLength">
+          <number>18</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLineEdit" name="alturaLineEdit">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>8</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="pisoLabel">
+         <property name="text">
+          <string>Piso:</string>
+         </property>
+         <property name="buddy">
+          <cstring>pisoLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="pisoLineEdit">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>5</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="deptoLabel">
+         <property name="text">
+          <string>Depto:</string>
+         </property>
+         <property name="buddy">
+          <cstring>deptoLineEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="deptoLineEdit">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="maxLength">
+          <number>5</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="4" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="ciudadLineEdit">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="emailLabel">
+       <property name="text">
+        <string>E-mail:</string>
+       </property>
+       <property name="buddy">
+        <cstring>emailLineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="celularLabel">
+       <property name="text">
+        <string>Celular:</string>
+       </property>
+       <property name="buddy">
+        <cstring>celularLineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="telefonoLabel">
+       <property name="text">
+        <string>Teléfono:</string>
+       </property>
+       <property name="buddy">
+        <cstring>telefonoLineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="provLabel">
+       <property name="text">
+        <string>Provincia:</string>
+       </property>
+       <property name="buddy">
+        <cstring>provLineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="direccionLabel">
+       <property name="text">
+        <string>Dirección:</string>
+       </property>
+       <property name="buddy">
+        <cstring>direccionLineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="alturaLabel">
+       <property name="text">
+        <string>Altura:</string>
+       </property>
+       <property name="buddy">
+        <cstring>alturaLineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="direccionLineEdit">
+       <property name="maxLength">
+        <number>40</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="nombreLineEdit">
+       <property name="maxLength">
+        <number>40</number>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLineEdit" name="provLineEdit">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="ciudadPushButton">
+       <property name="text">
+        <string>Ciudad...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QLineEdit" name="emailLineEdit">
+         <property name="maxLength">
+          <number>50</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="vendedorLineEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <zorder>buttonBox</zorder>
+  <zorder></zorder>
+  <zorder>line</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>nombreLineEdit</tabstop>
+  <tabstop>direccionLineEdit</tabstop>
+  <tabstop>alturaLineEdit</tabstop>
+  <tabstop>pisoLineEdit</tabstop>
+  <tabstop>deptoLineEdit</tabstop>
+  <tabstop>barrioLineEdit</tabstop>
+  <tabstop>ciudadPushButton</tabstop>
+  <tabstop>ciudadLineEdit</tabstop>
+  <tabstop>provLineEdit</tabstop>
+  <tabstop>telefonoLineEdit</tabstop>
+  <tabstop>celularLineEdit</tabstop>
+  <tabstop>emailLineEdit</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DlgAddProveedor</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DlgAddProveedor</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>305</x>
+     <y>336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nombreLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>direccionLineEdit</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>258</x>
+     <y>47</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>255</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nombreLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>direccionLineEdit</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>direccionLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>alturaLineEdit</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>216</x>
+     <y>76</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>180</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>direccionLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>alturaLineEdit</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>76</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>180</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>alturaLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pisoLineEdit</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>180</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>alturaLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pisoLineEdit</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>180</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pisoLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>deptoLineEdit</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>296</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>421</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pisoLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>deptoLineEdit</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>296</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>421</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deptoLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>barrioLineEdit</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>421</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>422</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deptoLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>barrioLineEdit</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>421</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>422</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>barrioLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>ciudadPushButton</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>174</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>84</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>provLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>telefonoLineEdit</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>245</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>152</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>provLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>telefonoLineEdit</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>118</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>116</x>
+     <y>206</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telefonoLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>celularLineEdit</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>221</x>
+     <y>209</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>222</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>telefonoLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>celularLineEdit</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>181</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>180</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>celularLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>emailLineEdit</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>241</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>235</x>
+     <y>284</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>celularLineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>emailLineEdit</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>244</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>201</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DlgBusquedaGenerica</class>
+ <widget class="QDialog" name="DlgBusquedaGenerica">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>473</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Seleccionar ciudad</string>
+  </property>
+  <widget class="QPushButton" name="buscarPushButton">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>30</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&amp;Buscar</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="busquedaLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>13</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="busquedaLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TITULO:</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="busquedaTableView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>451</width>
+     <height>291</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>451</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>busquedaLineEdit</tabstop>
+  <tabstop>buscarPushButton</tabstop>
+  <tabstop>busquedaTableView</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

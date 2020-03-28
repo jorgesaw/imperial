@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DlgVentaDiaria</class>
+ <widget class="QDialog" name="DlgVentaDiaria">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>439</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Venta diaria</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="fechaLabel_2">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 161, 118);
+color: rgb(255, 255, 255);
+font: 12pt &quot;Lucida Sans&quot;;</string>
+         </property>
+         <property name="text">
+          <string>&amp;Venta Varios:</string>
+         </property>
+         <property name="buddy">
+          <cstring>fechaDateEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblTotVarios">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 161, 118);
+color: rgb(255, 255, 255);
+font: 12pt &quot;Lucida Sans&quot;;</string>
+         </property>
+         <property name="text">
+          <string>0.0</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Vendedor:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="vendedoresComboBox"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="fechaLabel">
+         <property name="text">
+          <string>&amp;Fecha:</string>
+         </property>
+         <property name="buddy">
+          <cstring>fechaDateEdit</cstring>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="fechaDateEdit">
+         <property name="displayFormat">
+          <string>dd-MM-yyyy</string>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableView" name="ventaVariosTableView">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderCascadingSectionResizes">
+        <bool>false</bool>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 161, 118);
+color: rgb(255, 255, 255);
+font: 12pt &quot;Lucida Sans&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Venta Pan:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblTotPan">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 161, 118);
+color: rgb(255, 255, 255);
+font: 12pt &quot;Lucida Sans&quot;;</string>
+       </property>
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableView" name="ventaPanesTableView">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="fechaLabel_3">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 161, 118);
+color: rgb(255, 255, 255);
+font: 12pt &quot;Lucida Sans&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Total Ventas</string>
+       </property>
+       <property name="buddy">
+        <cstring>fechaDateEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblTotal">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 161, 118);
+color: rgb(255, 255, 255);
+font: 12pt &quot;Lucida Sans&quot;;</string>
+       </property>
+       <property name="text">
+        <string>0.0</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonImprimir">
+       <property name="text">
+        <string>&amp;Imprimir</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="guardarPushButton">
+       <property name="text">
+        <string>&amp;Grabar cambios</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cerrarPushButton">
+       <property name="text">
+        <string>&amp;Cerrar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>fechaDateEdit</tabstop>
+  <tabstop>ventaVariosTableView</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cerrarPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>DlgVentaDiaria</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>639</x>
+     <y>403</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>281</x>
+     <y>411</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

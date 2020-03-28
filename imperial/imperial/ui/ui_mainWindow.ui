@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>..::La Imperial::..</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>&amp;Archivo      </string>
+    </property>
+    <widget class="QMenu" name="menu_Base_de_datos">
+     <property name="title">
+      <string>&amp;Base de datos</string>
+     </property>
+     <addaction name="fileResguardarAction"/>
+     <addaction name="fileResguardarEnAction"/>
+     <addaction name="separator"/>
+     <addaction name="fileRestaurarAction"/>
+    </widget>
+    <addaction name="menu_Base_de_datos"/>
+    <addaction name="fileSalirAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_Tablas">
+    <property name="title">
+     <string>&amp;Tablas      </string>
+    </property>
+    <addaction name="tablaProductosAction"/>
+    <addaction name="separator"/>
+    <addaction name="tablaVentasAction"/>
+    <addaction name="tablaEgresosAction"/>
+    <addaction name="separator"/>
+    <addaction name="tablaProveedoresAction"/>
+    <addaction name="tablaVendedoresProvAction"/>
+    <addaction name="separator"/>
+    <addaction name="tablaIngredientesAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_Ventas">
+    <property name="title">
+     <string>&amp;Planillas      </string>
+    </property>
+    <addaction name="ventasPlanillaDiariaAction"/>
+    <addaction name="ventasVentasDiariasAction"/>
+    <addaction name="separator"/>
+    <addaction name="ventasResumenFiscalAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_Informes">
+    <property name="title">
+     <string>&amp;Reportes      </string>
+    </property>
+    <addaction name="repPlanillaDiariaAction"/>
+    <addaction name="repVentaDiariaAction"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_Costo">
+    <property name="title">
+     <string>&amp;Costos      </string>
+    </property>
+    <addaction name="costosProdAction_2"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menu_Tablas"/>
+   <addaction name="menu_Ventas"/>
+   <addaction name="menu_Costo"/>
+   <addaction name="menu_Informes"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="fileSalirAction">
+   <property name="icon">
+    <iconset resource="../../main_window.qrc">
+     <normaloff>:/quit.png</normaloff>:/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Cerrar</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+F4</string>
+   </property>
+  </action>
+  <action name="tablaProductosAction">
+   <property name="text">
+    <string>&amp;Productos</string>
+   </property>
+  </action>
+  <action name="tablaRubrosAction">
+   <property name="text">
+    <string>&amp;Rubros</string>
+   </property>
+  </action>
+  <action name="action_Egresos">
+   <property name="text">
+    <string>&amp;Egresos</string>
+   </property>
+  </action>
+  <action name="tablaEgresosAction">
+   <property name="text">
+    <string>&amp;Egresos</string>
+   </property>
+  </action>
+  <action name="saldoDiarioAction">
+   <property name="text">
+    <string>S&amp;aldo diario</string>
+   </property>
+  </action>
+  <action name="repPlanillaDiariaAction">
+   <property name="text">
+    <string>&amp;Planilla diaria</string>
+   </property>
+  </action>
+  <action name="repVentaDiariaAction">
+   <property name="text">
+    <string>&amp;Venta diaria</string>
+   </property>
+  </action>
+  <action name="infVendedoresAction">
+   <property name="text">
+    <string>V&amp;endedores</string>
+   </property>
+  </action>
+  <action name="infEgresosAction">
+   <property name="text">
+    <string>&amp;Egresos</string>
+   </property>
+  </action>
+  <action name="tablaVentasAction">
+   <property name="text">
+    <string>&amp;Ventas</string>
+   </property>
+  </action>
+  <action name="tablaProveedoresAction">
+   <property name="text">
+    <string>&amp;Proveedores</string>
+   </property>
+  </action>
+  <action name="tablaIngredientesAction">
+   <property name="text">
+    <string>&amp;Ingredientes</string>
+   </property>
+  </action>
+  <action name="ventasPlanillaDiariaAction">
+   <property name="text">
+    <string>&amp;Planilla diaria</string>
+   </property>
+  </action>
+  <action name="ventasVentasDiariasAction">
+   <property name="text">
+    <string>&amp;Ventas diarias</string>
+   </property>
+  </action>
+  <action name="ventasResumenFiscalAction">
+   <property name="text">
+    <string>&amp;Resumen fiscal</string>
+   </property>
+  </action>
+  <action name="costosProdAction">
+   <property name="text">
+    <string>Costos...</string>
+   </property>
+  </action>
+  <action name="tablaVendedoresProvAction">
+   <property name="text">
+    <string>Vendedores Prov</string>
+   </property>
+  </action>
+  <action name="fileResguardarAction">
+   <property name="text">
+    <string>&amp;Resguardar</string>
+   </property>
+  </action>
+  <action name="fileRestaurarAction">
+   <property name="text">
+    <string>R&amp;estaurar</string>
+   </property>
+  </action>
+  <action name="fileResguardarEnAction">
+   <property name="text">
+    <string>Resguardar en...</string>
+   </property>
+  </action>
+  <action name="costosProdAction_2">
+   <property name="text">
+    <string>Ver...      </string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../main_window.qrc"/>
+ </resources>
+ <connections/>
+</ui>
